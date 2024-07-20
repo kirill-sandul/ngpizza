@@ -1,0 +1,11 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+$black: #232323;
+$background: map-get($map: mat.$orange-palette, $key: 200);
+$gray-line: #f6f6f6;
+$orange: map-get($map: mat.$deep-orange-palette, $key: 500);
+
+$container-width: 90%;
+
+$duration: 0.15s;

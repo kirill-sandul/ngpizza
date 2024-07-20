@@ -1,0 +1,8 @@
+<mat-chip-list>
+  <mat-chip
+    #c="matChip"
+    *ngFor="let category of categories; let first = first;"
+    [value]="category"
+    [selected]="first"
+    (click)="toggle_selection(c)">{{ category }}</mat-chip>
+</mat-chip-list>

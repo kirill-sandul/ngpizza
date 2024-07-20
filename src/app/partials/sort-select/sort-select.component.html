@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Сортировать по:</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let sort of sort_items" [value]="sort.name" (click)="toggle_sort(sort)">
+      {{sort.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
